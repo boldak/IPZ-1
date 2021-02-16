@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		document.write("<h2>Функции</h2>");
+
+		//Создаём функцию с параметром
+		function write1(word){
+			document.write(word + "<br>");
+		}
+
+		write1("hello");
+		write1("world!")
+
+		//Создаём функцию с параметром, которая возвращает значение
+		function multiply1(a, b){
+			return a * b;
+		}
+		document.write(multiply1(2, 5));
+	</script>
+</body>
+</html>

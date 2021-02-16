@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		document.write("<h2>Работа с переменными</h2>")
+		//Работа с переменными
+		var num = 1.45;
+		//JavaScript чувствителен к регистру. Num и num - разные переменные
+		var Num = 23;
+		var string = "Hello";
+		var bool = true;
+
+		console.log(num);
+		console.log(Num);
+		console.log(string);
+		console.log(bool);
+
+		//Получение данных от пользователя
+		//var name = prompt("Как Вас зовут?");
+		//console.log("Hello " + name);
+
+		// Операции над переменными + - / %
+		var firstNum = 24;
+		var secondNum = 12;
+
+		//Прибавляем к firstNum числа
+		secondNum = secondNum + 3;
+		secondNum += 5
+
+		// Запись не в консоли, а вывод на страницу
+		document.write(firstNum + " + " + secondNum + " = ", firstNum + secondNum, "<br>");
+		document.write(firstNum + " - " + secondNum + " = ", firstNum - secondNum, "<br>");
+		document.write(firstNum + " / " + secondNum + " = ", firstNum / secondNum, "<br>");
+
+		document.write("Абсолютное значение ("+ -12 + ")" + " = ", Math.abs(-12), "<br>");
+		document.write("pi = ", Math.PI, "<br>");
+		document.write("e = ", Math.E + "<br>");
+
+		var number = 2.3; 
+		//Округление до большего
+		document.write("Округление до большего " + number + " ~ ", Math.ceil(number) + "<br>");
+		//Округление до меньшего
+		document.write("Округление до меньшего " + number + " ~ ", Math.floor(number) + "<br>");
+		//Округление математическое
+		document.write("Округление математическое " + number + " ~ ", Math.round(number) + "<br>");
+
+	</script>
+</body>
+</html>

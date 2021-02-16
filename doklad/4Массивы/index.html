@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script>
+		document.write("<h1>Работа с массивами</h1>");
+
+		var numbers = new Array(1, 2, 3, 4, 5);
+
+		var languages = ["JavaScript", "Java", "Python"];
+		document.write("Массив данных  = " + languages + "<br>");
+		document.write("Первый элемент массива  = " + languages[0] + "<br>");
+
+		//Добавление элементов в массив
+		document.write("<p></p><b>Добавление элементов в массив</b>" + "<br>");
+		languages[3] = "Ruby";
+		languages.push("Kotlin");
+
+		document.write("Массив данных  = " + languages + "<br>");
+
+	</script>
+</body>
+</html>

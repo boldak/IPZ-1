@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		document.write("<h2>Создание обьектов</h2>");
+		var person = {
+			name: "Karolina",
+			surname: "Tribunskaya",
+			age: 18,
+			NameAndSurname: function(){
+				return this.name + " " + this.surname;
+			}
+		}
+		document.write(person.name);
+		document.write(person.surname);
+		document.write(person.age + "<br>");
+		console.log(person);
+
+		document.write(person.NameAndSurname())
+
+	</script>
+</body>
+</html>

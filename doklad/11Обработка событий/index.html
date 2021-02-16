@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Обработка событий</h2>
+	<p id="text">Paragraph</p>
+	<button onclick="changeColor('blue');">Blue color</button>
+	<button onclick="changeColor('red');">Red color</button>
+	<button onmouseover="changeColor('black');">Black color</button>
+
+	<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+		Name: <input type="text" name="form_name">
+		password: <input type="text" name="form_password">
+		<input type="submit" value="Submit">
+	</form>
+
+
+	<script>
+		function validateForm(){
+			var element = document.forms["myForm"]["form_name"].value;
+			var element2 = document.forms["myForm"]["form_password"].value;
+			if(element == "" || element2 == ""){
+				alert("Error");
+				return false;
+			}
+			else{
+				alert("welcome!");
+			}
+		}
+
+
+		function changeColor(color){
+			var element = document.getElementById("text");
+			element.style.color = color;
+		}
+	</script>
+</body>
+</html>

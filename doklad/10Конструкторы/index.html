@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		document.write("<h2>Создание конструкторa обьектов</h2>");
+
+		var smartphone = new Object();
+		smartphone.company = "Xiaomi"
+		smartphone.color = "Black";
+		smartphone.memory = 64;
+		smartphone.price = 3000;
+
+		document.write(smartphone.price + "<br>");
+
+		function Phone(company, color, memory, price){
+			this.company = company;
+			this.color = color;
+			this.memory = memory;
+			this.price = price;
+		}
+
+		var phone1 = new Phone("Samsung", "white", 32, 3000);
+		document.write(phone1.company);
+
+	</script>
+</body>
+</html>
